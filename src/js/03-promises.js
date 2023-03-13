@@ -24,7 +24,7 @@ refs.createPromises.addEventListener('submit', (e) => {
   const stepValue = parseInt(step.value);
   const amountValue = parseInt(amount.value);
   
-  for (let i = 0; i < amountValue; i+=1) {
+  for (let i = 1; i <= amountValue; i+=1) {
     const delay = i * stepValue + delayValue;
 
 createPromise(i, delay)
